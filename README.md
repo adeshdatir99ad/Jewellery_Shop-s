@@ -1,5 +1,5 @@
-# Jewelry_Shop-s
-Jewelry Shop's website, designed with HTML, CSS, and JavaScript, offers a seamless and fully responsive browsing experience. Shop with confidence, whether you're on your computer or mobile device, as our website adapts flawlessly to your screen size.
+# Jewellery_Shop-s
+Jewellery Shop's website, designed with HTML, CSS, and JavaScript, offers a seamless and fully responsive browsing experience. Shop with confidence, whether you're on your computer or mobile device, as our website adapts flawlessly to your screen size.
 https://github.com/adeshdatir99ad/Jewelry_Shop-s/assets/63045592/f04751cd-9af1-415b-9bc9-51e87a3e584f
 
 ![Screenshot 2023-11-04 220325](https://github.com/adeshdatir99ad/Jewelry_Shop-s/assets/63045592/fd8f36ab-9e14-46b5-a189-a9f2896552f5)
