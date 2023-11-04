@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- =================================================== Navbar =================================================-->
+    <nav class="navbar">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg"height="26"viewBox="0 -960 960 960"width="24">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+          </a>
+        </li>
+        <li><a href="#">All Jewellery</a></li>
+        <li><a href="#">Gold</a></li>
+        <li><a href="#">Diamond</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Wedding</a></li>
+        <!-- Mobile Icon -->
+        <div class="icon">
+        <li class="mobile-cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+          </a>
+        </li>
+        <li class="mobile-cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+          </a>
+        </li>
+        <li class="mobile-cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </li>
+      </div>
+      </ul>
+      <ul>
+        <li>
+          <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+        </li>
+        <li class="hideOnMobile"><a href="#">All Jewellery</a></li>
+        <li class="hideOnMobile"><a href="#">Gold</a></li>
+        <li class="hideOnMobile"><a href="#">Diamond</a></li>
+        <li class="hideOnMobile"><a href="#">Collections</a></li>
+        <li class="hideOnMobile"><a href="#">Wedding</a></li>
+        <!-- PC Icon -->
+        <li class="cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg>
+          </a>
+        </li>
+        <li class="cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"/></svg>
+          </a>
+        </li>
+        <li class="cart" onclick="onpageshow">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+          </a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg"height="26"viewBox="0 -960 960 960"width="26">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ================================================= Hero Slider ==============================================-->
+    <div class="container">
+      <a href="index.html">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./images/i1.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i2.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i3.png" alt="" /></div>
+            <div class="swiper-slide"><img src="./images/i4.png" alt="" /></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </a>
+    </div>
+    <!-- =================================================== Slider 1 ===============================================-->
+    <section class="p-slider">
+      <!-- heading -->
+      <div class="title_one">
+        <h3 class="headline_one">SHOP BY CATEGORY</h3>
+      </div>
+      <!-- Btns -->
+      <div class="slider-btns">
+        <button aria-label="Previous" class="glider-prev">
+          <span></span>
+        </button>
+        <button aria-label="Next" class="glider-next">
+          <span></span>
+        </button>
+      </div>
+      <div class="glider-contain">
+        <div class="glider">
+          <!-- 1 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s1f.jpg"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s1b.jpg" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Pendant</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Paisley Glam Pendant </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 31,439</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s2f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s2b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title">Opulent Traditional Necklace</a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 1,94617</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s3f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s3b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Classy Tiered Necklace </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 1,28800</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s4f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s4b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Pendant</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Ornate Trishul Jitiya Pendant</a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 26,227</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s5f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s5b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Taj Haya Necklace </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 31,319</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s6f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s6b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Pendant Set</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Taj Ruhi Pendanr Set </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 2,159</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s7f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s7b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Taj Raza Necklace </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 36,849</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s8f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s8b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace Set</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title">
+                Nrityotsava Amulya Collar Necklace Set
+              </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 35,309</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s9f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s9b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Long Necklace</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title">
+                Nrityotsava Gauri Long Necklace
+              </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 3,299</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s10f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s10b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Necklace Set</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title">
+                Forever More Yellow Blue Necklace Set
+              </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 959</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 11 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s11f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s11b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Choker Set</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Nazakat Sehrish Choker Set </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 1,739</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- 12 -->
+          <!-- Product Box -->
+          <div class="product-box">
+            <!-- Discount -->
+            <span class="p-discount">-40%</span>
+            <!-- img-container -->
+            <div class="p-img-container">
+              <div class="p-img">
+                <a href="#">
+                  <img
+                    src="./images/s12f.webp"
+                    class="p-img-front"
+                    alt="front"
+                  />
+                  <img src="./images/s12b.webp" class="p-img-back" alt="back" />
+                </a>
+              </div>
+            </div>
+            <!-- Text -->
+            <div class="p-box-text">
+              <!-- category -->
+              <div class="product-category">
+                <span>Jewellery Set</span>
+              </div>
+              <!-- Title -->
+              <a href="#" class="product-title"> Round Cut CZ Jewellery Set </a>
+              <!-- Price Buy -->
+              <div class="price-buy">
+                <span class="p-price">₹ 56,479</span>
+                <a href="#" class="p-buy-btn">Buy Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================================================== (Grid) ================================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Timeless Treasures</h3>
+    </div>
+    <div class="grid">
+      <div class="column">
+        <img src="./images/g1.jpg" />
+      </div>
+      <div class="column">
+        <img src="./images/g2.webp" />
+        <img src="./images/g3.jpg" />
+      </div>
+    </div>
+    <!-- ==================================================== Poster-6 ==============================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Gemstone Gallery</h3>
+    </div>
+    <div class="container-gallery">
+      <div class="gallery">
+        <a href="./images/gg1.jpg" data-lightbox="models" data-title="Necklace">
+          <img src="./images/gg1.jpg" alt="" />
+        </a>
+        <a href="./images/gg2.jpg" data-lightbox="models" data-title="Necklace Set">
+          <img src="./images/gg2.jpg" alt="" />
+        </a>
+        <a href="./images/gg3.jpg" data-lightbox="models" data-title="Necklace">
+          <img src="./images/gg3.jpg" alt="" />
+        </a>
+        <a href="./images/gg4.jpg" data-lightbox="models" data-title="Necklace">
+          <img src="./images/gg4.jpg" alt="" />
+        </a>
+        <a href="./images/gg5.jpg" data-lightbox="models" data-title="Necklace">
+          <img src="./images/gg5.jpg" alt="" />
+        </a>
+        <a href="./images/gg6.jpg" data-lightbox="models" data-title="Bangles">
+          <img src="./images/gg6.jpg" alt="" />
+        </a>
+      </div>
+    </div>
+    <!-- ===================================================== Video ================================================-->
+    <div class="title_one">
+      <h3 class="headline_one">Glamour in Motion</h3>
+    </div>
+    <div class="video">
+      <video autoplay loop muted plays-inline class="back-video">
+        <source src="./images/vi.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- ===================================================== Footer ===============================================-->
+    <footer>
+      <div class="container">
+        <div class="sec">
+          <h2>About Us</h2>
+          <p>
+            Welcome to SiyaRam Jewellery Shop, where we craft elegance and beauty 
+            into every piece of jewelry. With a passion for exquisite design and 
+            unparalleled craftsmanship, we have been adorning the world with timeless 
+            treasures for 10+ years. Our journey is a reflection of 
+            dedication to artistry, quality, and sophistication. Explore our collection
+            and discover jewelry that tells stories, creates memories, and celebrates 
+            your unique style.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="https://www.instagram.com/adeshdatir_99/"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/adeshdatir"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/adesh.datir.99/"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCY2yJpYNDkmM-ivvlpEtsSg/videos"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Shop</h2>
+          <ul>
+            <li><a href="#">DIAMOND</a></li>
+            <li><a href="#">GOLD JEWELLERY</a></li>
+            <li><a href="#">DIGITAL GOLD</a></li>
+            <li><a href="#">GEMSTONES</a></li>
+          </ul>
+        </div>
+        <div class="sec contact">
+          <h2>Contact Us</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa-solid fa-phone"></i></span>
+              <p><a href="tel: +919881852058">+919881852058</a></p>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <p>
+                <a href="mailto: adeshdatir99@gmail.com"
+                  >adeshdatir99@gmail.com</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2">
+        <h3>NEWS LETTER</h3>
+        <form>
+          <input type="email" placeholder="Enter Your Email Address" required />
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </footer>
+    <div class="copyrightText">
+      <p>Copyright 2023 Online Tutorials. All Rights Reserved.</p>
+    </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
